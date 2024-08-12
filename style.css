@@ -1,0 +1,281 @@
+/* app */
+* {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  scroll-behavior: smooth;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background-color: rgb(23, 23, 32);
+  color: white;
+}
+header {
+  display: grid;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url("./assets/construction2.avif"); */
+  color: white;
+}
+/* @media not screen and (max-width: 500px) {
+  header {
+  }
+} */
+#logo {
+  height: 55%;
+  width: 50%;
+  align-self: end;
+  justify-self: center;
+}
+h1 {
+  align-self: end;
+  display: grid;
+}
+
+h2 {
+  padding-top: 8dvh;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h4 {
+  place-self: center;
+  display: grid;
+  place-content: center;
+}
+section {
+  display: grid;
+  justify-content: center;
+  height: 100dvh;
+}
+#myBtn {
+  display: none;
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: rgb(23, 23, 32); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+nav {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 8vh;
+  position: fixed;
+}
+a {
+  background-color: rgb(23, 23, 32);
+  display: grid;
+  place-content: center;
+  color: white;
+  height: fit-content;
+  width: 80%;
+  justify-self: center;
+  align-self: center;
+  text-decoration: none;
+  border: 1px solid #a5a5a5;
+  border-radius: 24px;
+}
+
+/* about us section */
+#about-us {
+  display: grid;
+  place-content: center;
+  grid-template-rows: 0.2fr 2fr 1fr;
+  height: 100dvh;
+}
+#about-text {
+  display: grid;
+  text-align: center;
+  place-content: center;
+  line-height: 24px;
+}
+#about-us-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  gap: 2em;
+  overflow: hidden;
+}
+
+ul {
+  height: min-content;
+  line-height: 36px;
+}
+
+.banner {
+  background-image: url("./assets/construction-site.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+/* meet the team section */
+#meet-the-team {
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+  place-content: center;
+}
+.meet-teammate {
+  display: grid;
+  text-align: center;
+  grid-template-columns: 1fr 2.5fr;
+  background-color: rgb(23, 23, 32);
+  border-radius: 24px;
+  height: 80%;
+  color: white;
+  place-self: center;
+  overflow: hidden;
+}
+.teammate {
+  display: grid;
+  place-content: center;
+  word-wrap: break-word;
+}
+.teammate-img {
+  display: grid;
+  place-content: center;
+  width: 260px;
+}
+.work-title {
+  display: grid;
+  place-content: center;
+  place-self: center;
+  width: 80%;
+}
+.second {
+  grid-template-columns: 2.6fr 1fr;
+}
+
+/* what we do section */
+#what-we-do {
+  grid-template-rows: 1fr 6fr;
+}
+#what-we-do-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.sub-content {
+  place-self: center;
+  background-color: rgb(23, 23, 32);
+  width: 80%;
+  height: 80%;
+  display: grid;
+  grid-template-rows: 0.8fr 0.4fr;
+  color: white;
+  border: 2px inset white;
+  overflow: hidden;
+}
+.fake-img {
+  place-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  width: 50%;
+}
+.what-we-do-img {
+  overflow: hidden;
+}
+.what-we-do-text {
+  padding-top: 2em;
+  text-align: center;
+}
+@media only screen and (max-width: 1024px) {
+  #what-we-do-content {
+    gap: 1em;
+  }
+  .sub-content {
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 2fr;
+    width: 80%;
+    height: 100%;
+  }
+  #what-we-do {
+    height: fit-content;
+    grid-template-rows: 0.5fr auto;
+    gap: 1em;
+  }
+  #what-we-do-content {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .what-we-do-text {
+    padding-top: 0;
+    text-align: center;
+    place-content: center;
+  }
+}
+/* experience section */
+#experience {
+  grid-template-rows: 1.5fr 4fr;
+}
+#experience-head-block {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  place-content: center;
+}
+#experience-heading {
+  border-right: 3px solid #a5a5a5;
+}
+#experience-head-text {
+  display: grid;
+  text-align: center;
+  text-wrap: balance;
+  padding-top: 1em;
+}
+
+#experience-content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  place-content: center;
+}
+.experience {
+  place-self: center;
+  display: grid;
+  place-content: center;
+  grid-template-rows: 1fr 5fr;
+  text-align: center;
+  width: 80%;
+  background-color: rgb(23, 23, 32);
+  color: white;
+}
+.experience-img {
+  height: 350px;
+}
+@media only screen and (max-width: 1024px) {
+  #experience {
+    height: fit-content;
+    grid-template-rows: 1fr 8fr;
+  }
+  #experience-content {
+    height: fit-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  #experience-head-block {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.5fr;
+  }
+  #experience-head-text {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    place-self: end;
+    height: fit-content;
+  }
+}
